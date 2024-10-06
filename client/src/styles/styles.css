@@ -1,0 +1,22 @@
+.roomTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.backArrow{
+  margin-right: 10px;
+}
+
+.coupleOfButton{
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.messageBox {
+  p {
+    margin-bottom: 0;
+  }
+}

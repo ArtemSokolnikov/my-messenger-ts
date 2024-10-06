@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Application
+It is a real-time chat application that allows users to log in, log out, and join rooms by entering their username and room name.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+- Real-time messaging
+- Room-based chat
+- User-friendly interface
 
-## Available Scripts
+## Technologies Used
+### Frontend
+- Framework: Vite (React + TypeScript)
+- Styling: Tailwind CSS, Bootstrap, MUI
 
-In the project directory, you can run:
+### Backend
+- Server: Node.js
+- Framework: Express
+- Real-time Communication: Socket.IO
+- Cross-Origin Resource Sharing: CORS
 
-### `npm start`
+## Environment Configuration
+### Server
+In the `server` folder, there is a `.env` file where you can set the following variables:
+- `PORT`: The port on which the server will run (default is `3001`).
+- `CORS_ORIGIN`: The origin allowed by CORS (default is `http://localhost:5173`).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Client
+In the `client` folder, there is a `.env.local` file where you can set the following variables:
+- `PORT`: The port where the server is running (default is `3001`).
+- `VITE_SERVER_URL`: The URL of the server if it is deployed somewhere other than the local machine (default is `http://localhost:3001`).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Running the Application
+1. Start the backend server
+    ```bash
+    cd server
+    npm start
+    ```
+    The server will start on `http://localhost:3001`.
 
-### `npm test`
+2. Start the frontend development server
+    ```bash
+    cd ../client
+    npm run dev
+    ```
+    The frontend will start on `http://localhost:5173`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
+1. Open your browser and navigate to http://localhost:5173.
+2. Enter a username and room name to join a chat room.
+3. Start chatting in real-time!

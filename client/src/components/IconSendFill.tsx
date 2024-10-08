@@ -1,4 +1,3 @@
-// icon:send-fill | Bootstrap https://icons.getbootstrap.com/ | Bootstrap
 import * as React from "react";
 
 function IconSendFill(props: React.SVGProps<SVGSVGElement>) {

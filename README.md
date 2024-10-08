@@ -9,7 +9,7 @@ It is a real-time chat application that allows users to log in, log out, and joi
 ## Technologies Used
 ### Frontend
 - Framework: Vite (React + TypeScript)
-- Styling: Tailwind CSS, Bootstrap, MUI
+- Styling: Tailwind CSS, Bootstrap, MUI (made it clear that I work with all style tools)
 
 ### Backend
 - Server: Node.js
